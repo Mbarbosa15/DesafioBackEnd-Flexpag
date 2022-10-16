@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+//Mudança de formato de data e de numeros de valor monetario
 public class Utils {
 
     static NumberFormat formatandoNumeros = new DecimalFormat("R$ #,##0.00");
