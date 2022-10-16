@@ -1,6 +1,6 @@
 
 package main;
-
+//Importando metodos e modelos das outras paginas de codigo
 import java.util.ArrayList;
 import java.util.Scanner;
 import model.Pessoa;
@@ -15,7 +15,7 @@ public class Main {
         contasBancarias = new ArrayList<Conta>();
         operacoes();
     }
-
+//Ultilizei uma classe vazia e a chamei de operações pois é onde aparece a interface para o usuario dialogar com a maquina.
     public static void operacoes() {
 
         System.out.println("------------------------------------------------------");
@@ -31,7 +31,7 @@ public class Main {
         System.out.println();
         System.out.print("Digite a opção desejada: ");
         int operacao = input.nextInt();;
-
+// Usei esssa função para diminuir a quantidade de codigo que eu escreveria e porque 
         switch (operacao) {
             case 1:
                 criarConta();
@@ -46,12 +46,12 @@ public class Main {
                 listarContas();
                 break;
             case 5:
-                System.out.println("Flw é nóis!");
+                System.out.println(" Até mais! ");
                 System.exit(0); // para o sistema
 
             default:
                 System.out.println("Opção inválida!");
-                operacoes();
+                operacoes(); // para erro do sistema
                 break;
         }
     }
@@ -117,7 +117,7 @@ public class Main {
 
     
     
-    
+    // metodo com classe vazia para fazer o pagamento
     public static void pagar() {
    	
         System.out.println("Qual o numero da conta bancaria? : ");
@@ -139,7 +139,7 @@ public class Main {
 
 
  
-
+// Lista de contas cadastradas (apenas mediante cadastro)
     public static void listarContas() {
         if(contasBancarias.size() > 0) {
             for(Conta conta: contasBancarias) {
