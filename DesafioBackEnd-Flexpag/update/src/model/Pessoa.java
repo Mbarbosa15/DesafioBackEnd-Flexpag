@@ -5,7 +5,7 @@ import java.util.Date;
 import utils.Utils;
 
 public class Pessoa {
-
+// declarando as variaveis 
     private static int counter = 1;
 
     private int numeroPessoa ;
@@ -15,7 +15,7 @@ public class Pessoa {
     private Date accountCreationDate;
 
     public Pessoa() { }
-
+//
     public Pessoa(String name, String cpf, String email) {
         this.numeroPessoa = Pessoa.counter;
         this.name = name;
@@ -24,7 +24,7 @@ public class Pessoa {
         this.accountCreationDate = new Date();
         Pessoa.counter += 1;
     }
-
+// "setando" palavras e numeros 
     public int getNumeroPessoa() {
         return this.numeroPessoa;
     }
@@ -50,7 +50,7 @@ public class Pessoa {
     public Date getAccountCreationDate() {
         return this.accountCreationDate;
     }
-
+// Printando na tela
     public String toString() {
         return  "\nName: " + this.getName() +
                 "\nCPF: " + this.getCpf() +
