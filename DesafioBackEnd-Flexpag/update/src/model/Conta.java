@@ -38,7 +38,7 @@ public class Conta {
     private void updateSaldo() {
         this.saldo = this.getSaldo();
     }
-
+//Printando após o tratamento dos dados
     public String toString() {
 
         return "\nBank account: " + this.getNumeroConta() +
@@ -49,7 +49,7 @@ public class Conta {
                 "\n" ;
     }
 
-    
+    //Metodo para deposito
     public void depositar(Double valor) {
         if(valor > 0) {
             setSaldo(getSaldo() + valor);
@@ -60,7 +60,7 @@ public class Conta {
         }
     }
     
-    
+    //metodo para pagamento
     public void pagar(Double valor) {
         if(valor > 0) {
             setSaldo(getSaldo() + valor);
